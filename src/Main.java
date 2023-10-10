@@ -102,38 +102,13 @@ public class Main {
                                             System.out.println("Digite o rendimento mensal (Digite somente numero): ");
                                             novapj.rendimento = scanner.nextInt();
 
-                                            //System.out.println("Digite a data de Nascimento (dd/MM/aaaa): ");
-                                            //LocalDate date = LocalDate.parse(scanner.next(), DateTimeFormatter.ofPattern("dd/MM/yyyy"));
-                                            //Period periodo = Period.between(date, LocalDate.now());
-
-                                            //novapf.dataNascimento = date;
-
-                                            if (periodo.getYears() >= 18) {
-                                                System.out.println("A pessoa tem mais de 18 anos");
-                                            } else {
-                                                System.out.println("A pessoa tem menos de 18 anos. Retornando menu...");
-                                                break;
-                                            }
-
                                             System.out.println("Digite o logradouro: ");
                                             novoEndPj.logradouro = scanner.next();
 
                                             System.out.println("Digite o número: ");
                                             novoEndPj.numero = scanner.next();
 
-                                            System.out.println("Este endereço é comercial? S/N: ");
-                                            String endCom;
-                                            endCom = scanner.next();
-
-                                            if (endCom.equalsIgnoreCase("S")) {
-                                                novoEndPf.enderecoComercial = true;
-                                            } else {
-                                                novoEndPf.enderecoComercial = false;
-                                            }
-
-                                            novapf.endereco = novoEndPf;
-
-                                            listaPf.add(novapf);
+                                            listaPf.add(novapj);
 
                                             System.out.println("Cadastro realizado com sucesso!");
 
